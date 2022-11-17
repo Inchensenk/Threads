@@ -11,7 +11,7 @@ namespace CriticalSection
             int hash = Thread.CurrentThread.GetHashCode();
 
             //Критическая секция
-            lock(block)
+            lock(block) 
             {
                 for (int counter = 0; counter < 10; counter++)
                 {
